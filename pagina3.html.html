@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Básica</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <style>
+        .page-with-images {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            gap: 40px;
+            align-items: start;
+            margin-bottom: 32px;
+        }
+
+        .images-column {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .image-card {
+            width: 100%;
+            max-width: 250px;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+            border: 2px solid rgba(168, 216, 255, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .image-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 16px 40px rgba(122, 92, 255, 0.3);
+            border-color: rgba(168, 216, 255, 0.4);
+        }
+
+        .image-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        @media (max-width: 1024px) {
+            .page-with-images {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .images-column {
+                flex-direction: row;
+                justify-content: center;
+            }
+
+            .image-card {
+                max-width: 200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="page">
+        <h1 class="title">LA BÁSICA</h1>
+        
+        <div class="page-with-images">
+            <div class="images-column">
+                <div class="image-card">
+                    <img src="img/chaca.jpeg" alt="Escuela Básica">
+                </div>
+            </div>
+
+            <div class="content">
+                <p>
+                    Aquí empezaron mis años en Chacayal, en la escuela básica Chacayal Sur. Todos me querían conocer, se interesaban en mí, en saber de mí, escuchar mi acento por ser colombiano. Me sentía querido.
+                </p>
+
+                <div class="section-title">Los Maltratos</div>
+                <p>
+                    Aún así, todo lo bueno dura su tiempo. Empezaron los malos tratos, las burlas, el rechazo. Todos pasaron de querer conocerme a querer devolverme a mi país, insultos hacia mi nacionalidad, amenazas, golpes. Mi hermana me defendía, pero aun así esos tratos siguieron por años, hasta el último año. Rompían mis cosas, me inculpaban de cosas que no eran.
+                </p>
+
+                <div class="section-title">La Profesora Luisella</div>
+                <p>
+                    Aun así, siempre hubo una profesora que siempre me quiso, siempre me apoyó en todo momento. Ella sabía que no estaba bien y me aconsejó hasta el último día. Siempre agradecido con la profesora Luisella.
+                </p>
+
+                <div class="section-title">Mi Pasión por el Baile</div>
+                <p>
+                    Fue una de mis peores etapas; los maltratos seguían, los problemas familiares seguían. Aun así, mi mamá logró sacarnos adelante como siempre. Durante esos años me gustaba demasiado bailar, era mi pasión en ese entonces. Gané diplomas y siempre quería bailar por la escuela y era escogido como el central para bailar. Quizás era una manera de distraerme de todo lo que estaba pasando.
+                </p>
+            </div>
+
+            <div class="images-column">
+                <div class="image-card">
+                    <img src="img/chaca2.jpeg" alt="Baile en la Escuela">
+                </div>
+            </div>
+        </div>
+
+        <a class="back-link" href="index.html">Volver al inicio</a>
+    </main>
+</body>
+
+</html>

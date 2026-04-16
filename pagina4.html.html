@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Adolescencia</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <style>
+        .page-with-images {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            gap: 40px;
+            align-items: start;
+            margin-bottom: 32px;
+        }
+
+        .images-column {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .image-card {
+            width: 100%;
+            max-width: 250px;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+            border: 2px solid rgba(168, 216, 255, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .image-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 16px 40px rgba(122, 92, 255, 0.3);
+            border-color: rgba(168, 216, 255, 0.4);
+        }
+
+        .image-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        @media (max-width: 1024px) {
+            .page-with-images {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .images-column {
+                flex-direction: row;
+                justify-content: center;
+            }
+
+            .image-card {
+                max-width: 200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="page">
+        <h1 class="title">MI ADOLESCENCIA</h1>
+        
+        <div class="page-with-images">
+            <div class="images-column">
+                <div class="image-card">
+                    <img src="img/ado4.jpeg" alt="Los Ángeles">
+                </div>
+                <div class="image-card">
+                    <img src="img/ado.jpeg" alt="Problemas de Ira">
+                </div>
+            </div>
+
+            <div class="content">
+                <p>
+                    La etapa más "rara", tengo más recuerdos de mi infancia que de mi adolescencia. Nos mudamos a Los Ángeles, estuvimos en diferentes casas, pero había una que estuvimos años. Siempre que llovía mucho se inundaba hasta las rodillas; era complicado tener que arreglar todo después de ese desastre.
+                </p>
+
+                <div class="section-title">Problemas de Ira</div>
+                <p>
+                    Con el tiempo, no sé por qué, en qué momento empezaron mis problemas de ira. No podía controlarme, nunca golpeé a nadie, solo a las cosas: rompía cosas, tiraba las cosas, mis manos reventadas, me fracturé la mano. Mi mamá no sabía qué hacer conmigo y yo menos; estaba perdido en mi mente, me sentía vacío.
+                </p>
+
+                <div class="section-title">Los Maltratos Continúan</div>
+                <p>
+                    Los maltratos seguían, no sé cómo mamá pudo soportar tanto. Pasó un tiempo, las cosas no iban de lo mejor, estaba pasando por un momento crítico.
+                </p>
+
+                <div class="section-title">Pensamientos Oscuros</div>
+                <p>
+                    Tuve pensamientos suicidas, estaba listo, pero no lo hice, no fui capaz. Lo único que pasó por mi mente en ese momento era mamá.
+                </p>
+
+                <div class="section-title">Conocer a Ella</div>
+                <p>
+                    Pasado el tiempo, después de eso, conocí a alguien: una luz en una mente perdida, una chica callada, tímida. Empecé a interactuar con ella siendo rechazado, quise dejarla, pero había un sentimiento que no me dejaba rendirme tan fácil. Así estuve por 6 meses hasta que me aceptó.
+                </p>
+
+                <div class="section-title">Mi Conversión</div>
+                <p>
+                    Gracias a ella pude conocer algo que me cambió completamente mi forma de pensar, de ser, de creer: el Señor, ser cristiano. Y a día de hoy y siempre seguiré siéndolo. La familia de ella me recibió de la mejor manera, nunca sabré cómo pagar eso, siendo como una familia para mí.
+                </p>
+            </div>
+
+            <div class="images-column">
+                <div class="image-card">
+                    <img src="img/ado3.jpeg" alt="Conocer a Ella">
+                </div>
+                <div class="image-card">
+                    <img src="img/ado5.jpeg" alt="Conversión">
+                </div>
+                <div class="image-card">
+                    <img src="img/ado2.jpeg" alt="Mi otra familia">
+                </div>
+            </div>
+        </div>
+
+        <a class="back-link" href="index.html">Volver al inicio</a>
+    </main>
+</body>
+
+</html>
