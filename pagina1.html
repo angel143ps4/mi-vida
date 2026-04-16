@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Inicio</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <style>
+        .page-with-images {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            gap: 40px;
+            align-items: start;
+            margin-bottom: 32px;
+        }
+
+        .images-column {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .image-card {
+            width: 100%;
+            max-width: 250px;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+            border: 2px solid rgba(168, 216, 255, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .image-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 16px 40px rgba(122, 92, 255, 0.3);
+            border-color: rgba(168, 216, 255, 0.4);
+        }
+
+        .image-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        @media (max-width: 1024px) {
+            .page-with-images {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .images-column {
+                flex-direction: row;
+                justify-content: center;
+            }
+
+            .image-card {
+                max-width: 200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="page">
+        <h1 class="title">EL INICIO</h1>
+        
+        <div class="page-with-images">
+            <div class="images-column">
+                <div class="image-card">
+                    <img src="img/yo.jpeg" alt="Luis de pequeño">
+                </div>
+                <div class="image-card">
+                    <img src="img/luis.jpeg" alt="Infancia">
+                </div>
+            </div>
+
+            <div class="content">
+                <p>
+                    Hola, me llamo Luis. Nací en Colombia, en Cartago, Valle del Cauca, un 22 de octubre de 2006. No sé si nací en un hospital o en casa, tengo recuerdos vagos de cuando era niño.
+                </p>
+
+                <div class="section-title">Los Años con mis Abuelos</div>
+                <p>
+                    Vivía con mis abuelos. No tuve la mejor crianza ya que no me controlaban mucho y acostumbré a hacer las cosas a mi manera. Con los años vi e hice cosas que hasta hoy me arrepiento. Las malas amistades no aportaban mucho, pero aún así, después de años logré cambiar (o eso creo). Mis abuelos siempre fueron los mejores, quizás yo hacía las cosas mal.
+                </p>
+
+                <div class="section-title">La Vida en la Calle</div>
+                <p>
+                    Siempre estaba en la calle hasta la madrugada, me escapaba de mi escuelita, perdí 2-3 años. No era consciente de lo que pasaba en casa o en mi familia, supongo que porque era un niño. A veces no teníamos para comer, pero mamá siempre buscaba la forma de arreglárselas para darnos un platito de comida. Desde ese momento supe que nunca dejaría a mi madre.
+                </p>
+
+                <div class="section-title">Lo Que Más Recuerdo (5-8 Años)</div>
+                <p>
+                    Esta es una de las etapas que más recuerdo de mi vida. Entre esas edades supe lo que realmente era la vida allí: no confiar en nadie. Personas que llamaba "amigos" asesinaron a mi mascota con una pala, un perrito negro. Estuve todo el día buscándolo. No lo encontré hasta que, en forma de burla, me dijeron dónde podía ir a revisar. En ese momento lo vi, tirado ya sin vida. Me dieron una pala, la misma con la que lo mataron, para enterrarlo. Tiempo después me fui de allí.
+                </p>
+            </div>
+
+            <div class="images-column">
+                <div class="image-card">
+                    <img src="img/luis2.jpeg" alt="Recuerdos">
+                </div>
+                <div class="image-card">
+                    <img src="img/luis3.jpeg" alt="Momentos">
+                </div>
+            </div>
+        </div>
+
+        <a class="back-link" href="index.html">Volver al inicio</a>
+    </main>
+</body>
+
+</html>
